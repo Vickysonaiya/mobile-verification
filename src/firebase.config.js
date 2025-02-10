@@ -12,8 +12,7 @@ const firebaseConfig = {
   messagingSenderId: "",
   appId: ""
 };
-
-// firebase
+// firebase credential part over.
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
