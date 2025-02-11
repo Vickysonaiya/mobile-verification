@@ -1,3 +1,4 @@
+import React from 'react'
 import { CgSpinner } from "react-icons/cg";
 import OtpInput from "otp-input-react";
 import { useState, useEffect } from "react";
