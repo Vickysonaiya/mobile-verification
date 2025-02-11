@@ -72,7 +72,7 @@ const Login = () => {
           {showOTP ? (
             <>
               <div className="bg-white">
-                <img src={image.logo} className="mx-auto w-30 h-20" />
+                <img src={image.logo} className="mx-auto w-30 h-20" alt="otp"/>
               </div>
               <label className="font-bold text-xl text-center">
                 Enter OTP
@@ -83,7 +83,7 @@ const Login = () => {
               <img
                 src={image.image2}
                 alt="Sign in illustration"
-                className="mx-auto w-80 h-60"
+                className="mx-auto w-80 h-60" 
               />
               <label className="text-gray-500 text-center">
                 By sumbitting the OTP, you agree with our <a className="terms" href="#">Terms and Conditions</a> and <a className="terms" href="#">Privacy Policy</a>
@@ -119,14 +119,14 @@ const Login = () => {
             </>
           ) : (
             <>
-              <img src={image.logo} className="mx-auto w-30 h-20" />
+              <img src={image.logo} className="mx-auto w-30 h-20" alt="otp" />
               <label className="font-bold text-xl text-black text-center">
                 Sign in with Mobile number
               </label>
               <label className="text-gray-800 text-center">
                 1/Pass ensures only authenticated and verified hosts are able to invite visitors.
               </label>
-              <img src={image.image1} className="mx-auto w-120 h-50" />
+              <img src={image.image1} className="mx-auto w-120 h-50" alt="otp"/>
               <p className="text-gray-400">Mobile Number</p>
               <PhoneInput country={"in"} value={ph} onChange={setPh} />
               <button
