@@ -12,3 +12,38 @@
 .opt-container input {
   @apply !mr-0 flex-1 py-5 outline-none;
 }
+
+.otp-container input {
+  width: 40px;
+  height: 50px;
+  margin: 1px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid grey; /* Green border */
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.otp-container input:focus {
+  border-color: black; /* Darker green on focus */
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+.button{
+  width: 105%;
+}
+
+.text-black:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.terms{
+  color:dodgerblue;
+  font-weight: 500;
+}
+
+.image{
+  height:80ex;
+}

@@ -1,6 +1,8 @@
 import { CgSpinner } from "react-icons/cg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import image from "./images";
+import "./index.css";
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
@@ -15,23 +17,20 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="bg-slate-900 flex flex-col items-center justify-center h-screen">
-      <h2 className="text-center text-white font-medium text-2xl mb-4">
-        Welcome to the Dashboard!
-      </h2>
-      <img
-        src="https://i.pinimg.com/736x/a6/b1/f1/a6b1f1f9fc5d1da371e6578b14288c6a.jpg"
-        alt="Sign in illustration"
-        className="mx-auto"
-      />
-      <button
-        onClick={handleNavigate}
-        className="bg-emerald-500 flex gap-1 items-center justify-center py-2 px-6 text-white rounded-md text-lg hover:bg-emerald-600 transition duration-300"
-      >
-        {loading && <CgSpinner size={20} className="mt-1 animate-spin" />}
-        <span>Go To Login</span>
-      </button>
-    </section>
+    <section className="flex flex-col items-center h-screen">
+  <img
+    src={image.image3}
+    alt="Sign in illustration"
+    className="w-66 h-96 image"
+  />
+  <button
+    onClick={handleNavigate}
+    className="absolute bottom-10 bg-black flex gap-1 items-center justify-center py-2 px-6 text-white rounded-md text-lg hover:bg-black transition duration-300"
+  >
+    {loading && <CgSpinner size={20} className="mt-1 animate-spin" />}
+    <span>Go To Login</span>
+  </button>
+</section>
   );
 };
 
