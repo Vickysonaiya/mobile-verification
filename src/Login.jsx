@@ -51,6 +51,10 @@ const Login = () => {
       setLoading(true);
       if(otp == 123456){
         navigate("/dashboard");
+      }else{
+        setLoading(false);
+        toast.error("wrong otp")
+        setOtp("")
       }
       // window.confirmationResult
       //   .confirm(otp)
@@ -78,6 +82,11 @@ const Login = () => {
                 <label className="font-bold text-xl text-white text-center">
                   Enter your OTP
                 </label>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9LkFCxsozWzq42IDQej-z4f203irSA3vbvA&s"
+                  alt="Sign in illustration"
+                  className="mx-auto w-40 h-40"
+                />
                 <OtpInput
                   value={otp}
                   onChange={setOtp}
@@ -98,6 +107,11 @@ const Login = () => {
                 <label className="font-bold text-xl text-white text-center">
                   Sign in with your phone number
                 </label>
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/689/228/small/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg"
+                  alt="Sign in illustration"
+                  className="mx-auto w-40 h-40"
+                />
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                 <button
                   onClick={onSignup}
