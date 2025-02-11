@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 
-a.terms{
+span.terms{
   color:dodgerblue;
   font-weight: 500;
 }
