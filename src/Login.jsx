@@ -86,7 +86,7 @@ const Login = () => {
                 className="mx-auto w-80 h-60" 
               />
               <label className="text-gray-500 text-center">
-                By sumbitting the OTP, you agree with our <a className="terms" href="#">Terms and Conditions</a> and <a className="terms" href="#">Privacy Policy</a>
+                By sumbitting the OTP, you agree with our <a className="terms">Terms and Conditions</a> and <a className="terms">Privacy Policy</a>
               </label>
               <OtpInput
                 className="otp-container"
