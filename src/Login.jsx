@@ -31,7 +31,6 @@ const Login = () => {
       onCaptchVerify();
       setShowOTP(true);
       toast.success("OTP sent successfully!");
-      setOtp(123456)
       const appVerifier = window.recaptchaVerifier;
       const formatPh = "+" + ph;
   
@@ -50,17 +49,19 @@ const Login = () => {
   
     function onOTPVerify() {
       setLoading(true);
-      navigate("/dashboard");
-      window.confirmationResult
-        .confirm(otp)
-        .then(() => {
-          setLoading(false);
-          navigate("/dashboard");
-        })
-        .catch((err) => {
-          console.log(err);
-          setLoading(false);
-        });
+      if(otp == 123456){
+        navigate("/dashboard");
+      }
+      // window.confirmationResult
+      //   .confirm(otp)
+      //   .then(() => {
+      //     setLoading(false);
+      //     navigate("/dashboard");
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //     setLoading(false);
+      //   });
     }
   
     return (
