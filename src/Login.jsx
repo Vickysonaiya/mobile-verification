@@ -28,20 +28,10 @@ const Login = () => {
     return () => clearInterval(countdown);
   }, [showOTP, timer]);
 
-  function onCaptchVerify() {
-    if (!window.recaptchaVerifier) {
-      window.recaptchaVerifier = new RecaptchaVerifier(
-        "recaptcha-container",
-        { size: "invisible", callback: () => onSignup() },
-        auth
-      );
-    }
-  }
 
   function onSignup() {
     if (ph.length < 10) return;
     setLoading(true);
-    // onCaptchVerify();
     setShowOTP(true);
     setTimer(60);
     toast.success("OTP sent successfully!");
