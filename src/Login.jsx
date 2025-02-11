@@ -49,7 +49,7 @@ const Login = () => {
   
     function onOTPVerify() {
       setLoading(true);
-      if(otp == 123456){
+      if(otp === "123456"){
         navigate("/dashboard");
       }else{
         setLoading(false);
