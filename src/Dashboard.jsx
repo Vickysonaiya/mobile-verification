@@ -72,7 +72,7 @@ const Dashboard = () => {
 
         {/* Invite Guest Button */}
         <div className="mt-6 flex justify-center">
-          <button className="flex items-center bg-white text-black py-2 px-4 rounded-lg font-bold shadow-md">
+          <button onClick={handleNavigate} className="flex items-center bg-white text-black py-2 px-4 rounded-lg font-bold shadow-md">
             <span className="mr-2 text-xl">➕</span> Invite Guest
           </button>
         </div>
